@@ -92,7 +92,7 @@ class CheckColors {
 
         }
 
-      //  resultArray.sort( (a, b) => a-b );
+        resultArray.sort( (a, b) => a-b );
         return resultArray;
     }
 }
