@@ -1,0 +1,37 @@
+#header {
+  height: 8%;
+  background: linear-gradient(to bottom, #ffd194 0%,#d1913c 100%);
+  font-size: 2.5em;
+  border-top: 1px solid black;
+  .headerBox {
+    padding-left: 12%;
+    padding-right: 12%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    .color {
+      width: 0.8em;
+      height: 0.8em;
+      border-radius: 50%;
+    }
+    .red {
+      background-color: red;
+    }
+    .white {
+      background-color: white;
+    }
+    .yellow {
+      background-color: yellow;
+    }
+    .pink {
+      background-color: hotpink;
+    }
+    .blue {
+      background-color: blue;
+    }
+    .green {
+      background-color: green;
+    }
+  }
+}
