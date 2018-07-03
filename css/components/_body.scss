@@ -41,43 +41,69 @@ section#body {
   }
   #board {
     transform: translate(0, -2em);
-    width: 35em;
+    width: 55em;
     height: 55em;
     margin: 0 auto;
-    border: 3px solid orange;
-    -webkit-box-shadow: 7px 8px 23px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 7px 8px 23px 0px rgba(0,0,0,0.75);
-    box-shadow: 7px 8px 23px 0px rgba(0,0,0,0.75);
-    .row {
+    .bigRow {
       height: 10%;
-      padding-right: 1.5em;
-      padding-left: 1.5em;
-      align-items: center;
-      section {
-        padding-top: 0.2em;
+      display: flex;
+      flex-direction: row;
+      .points {
+        height: 100%;
+        width: 10em;
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
-        .ball {
-          background-color: #6f6f6f;
+        justify-content: space-around;
+        align-items: center;
+        .pointsBall {
+          width: 1.6em;
+          height: 1.6em;
           border-radius: 50%;
-          width: 2.8em;
-          height: 2.8em;
-          -webkit-box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.75);
-          -moz-box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.75);
-          box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.75);
-
-        }
-        .active:hover {
-          cursor: pointer;
+          border: 1px solid black;
         }
       }
-    }
-    .row:nth-child(even) {
-      background: linear-gradient(to bottom, #b29f94 0%,#603813 100%);
-    }
-    .row:nth-child(odd) {
-      background: linear-gradient(to bottom, #d6bfb2 0%, #844d1a 100%);
+      .row {
+        width: 35em;
+        height: 100%;
+        padding-right: 1.5em;
+        padding-left: 1.5em;
+        align-items: center;
+        -webkit-box-shadow: 7px 8px 23px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 7px 8px 23px 0px rgba(0,0,0,0.75);
+        box-shadow: 7px 8px 23px 0px rgba(0,0,0,0.75);
+        section {
+          padding-top: 0.2em;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          .ball {
+            background-color: #6f6f6f;
+            border-radius: 50%;
+            width: 2.8em;
+            height: 2.8em;
+            -webkit-box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.75);
+            box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.75);
+
+          }
+          .active:hover {
+            cursor: pointer;
+          }
+        }
+      }
+      .row:nth-child(even) {
+        background: linear-gradient(to bottom, #b29f94 0%,#603813 100%);
+      }
+      .row:nth-child(odd) {
+        background: linear-gradient(to bottom, #d6bfb2 0%, #844d1a 100%);
+      }
+      button.checkColors {
+        height: 60%;
+        width: 8em;
+        margin-left: 2em;
+        margin-top: 1em;
+        border-radius: 0.5em;
+      }
     }
   }
 }
@@ -93,8 +119,16 @@ section#body {
       margin-bottom: 0.4em;
     }
     #board {
-      width: 20em;
+      width: 40em;
       height: 35.5em;
+      .bigRow {
+        .row {
+          width: 20em;
+        }
+        .points {
+          width: 10em;
+        }
+      }
     }
   }
 }

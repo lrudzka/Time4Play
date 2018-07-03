@@ -17,6 +17,16 @@ class Color {
         }
 
     }
+
+    static returnPointsColor(num) {
+        if (num==0) {
+            return 'transparent';
+        } else if (num==1) {
+            return 'white';
+        } else if (num==2) {
+            return 'black';
+        }
+    }
 }
 
 module.exports = Color;
