@@ -1,2 +1,2 @@
 # Time4Play
-Mastermind Game
+Mastermind Game - project in progress
