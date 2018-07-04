@@ -73,6 +73,14 @@ class Body extends React.Component{
         }
     }
 
+    handleNextLvl = (number) => {
+        let newLvl = number+1;
+        console.log('newLvl=', newLvl);
+        this.setState({
+            lvlStatus: newLvl
+        })
+    }
+
 
     render(){
 
@@ -118,6 +126,7 @@ class Body extends React.Component{
                                                      hiddenNumber3 = {this.hiddenNumber3}
                                                      hiddenNumber4 = {this.hiddenNumber4}
                                                      lvlStatus = {this.state.lvlStatus}
+                                                     actionNextLvl = {this.handleNextLvl}
                        />  )}
 
                    </div>

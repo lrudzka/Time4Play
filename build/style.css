@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Tahoma, Arial, 'sans-serif'; }
+
+.mainWidth {
+  max-width: 1200px;
+  margin: 0 auto; }
+
+#header {
+  height: 8%;
+  background: linear-gradient(to left, #200122 0%, #6f0000 100%);
+  font-size: 2.5em;
+  border-top: 1px solid black;
+  color: white; }
+  #header .headerBox {
+    padding-left: 12%;
+    padding-right: 12%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center; }
+    #header .headerBox .color {
+      width: 0.8em;
+      height: 0.8em;
+      border-radius: 50%; }
+    #header .headerBox .red {
+      background-color: red; }
+    #header .headerBox .white {
+      background-color: white; }
+    #header .headerBox .yellow {
+      background-color: yellow; }
+    #header .headerBox .pink {
+      background-color: hotpink; }
+    #header .headerBox .blue {
+      background-color: blue; }
+    #header .headerBox .green {
+      background-color: green; }
+
+section#mainSection {
+  height: 100vh; }
+
+section#footer {
+  height: 8%;
+  background: linear-gradient(to left, #200122 0%, #6f0000 100%);
+  border-bottom: 1px solid black;
+  font-size: 1.5em;
+  color: white; }
+  section#footer .footerBox {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; }
+
+section#body {
+  padding-top: 7em;
+  min-height: 84%;
+  background: linear-gradient(to right, #f12711 0%, #f5af19 100%); }
+  section#body button#play {
+    width: 12em;
+    height: 3em;
+    border-radius: 10px;
+    transform: translate(31em, -10em);
+    background: linear-gradient(to right, lightblue 0%, lightgreen 100%); }
+  section#body #boardHeader {
+    width: 35em;
+    height: 3.2em;
+    border: 2px solid orange;
+    margin: 0 auto;
+    margin-bottom: 1em;
+    background: linear-gradient(to right, #c6ffdd 0%, #fbd78b 50%, #f7797d 100%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 1.5em;
+    padding-left: 1.5em;
+    padding-top: 0.1em;
+    box-shadow: 7px 8px 23px 0px rgba(0, 0, 0, 0.75); }
+    section#body #boardHeader .ballHeader {
+      background-color: #4b4b4b;
+      border-radius: 50%;
+      width: 2.6em;
+      height: 2.6em;
+      box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.75); }
+  section#body #board {
+    transform: translate(0, -2em);
+    width: 55em;
+    height: 55em;
+    margin: 0 auto; }
+    section#body #board .bigRow {
+      height: 10%;
+      display: flex;
+      flex-direction: row; }
+      section#body #board .bigRow .points {
+        height: 100%;
+        width: 10em;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center; }
+        section#body #board .bigRow .points .pointsBall {
+          width: 1.6em;
+          height: 1.6em;
+          border-radius: 50%;
+          border: 1px solid black; }
+      section#body #board .bigRow .row {
+        width: 35em;
+        height: 100%;
+        padding-right: 1.5em;
+        padding-left: 1.5em;
+        align-items: center;
+        box-shadow: 7px 8px 23px 0px rgba(0, 0, 0, 0.75); }
+        section#body #board .bigRow .row section {
+          padding-top: 0.2em;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between; }
+          section#body #board .bigRow .row section .ball {
+            background-color: #6f6f6f;
+            border-radius: 50%;
+            width: 2.8em;
+            height: 2.8em;
+            box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.75); }
+          section#body #board .bigRow .row section .active:hover {
+            cursor: pointer; }
+      section#body #board .bigRow .row:nth-child(even) {
+        background: linear-gradient(to bottom, #b29f94 0%, #603813 100%); }
+      section#body #board .bigRow .row:nth-child(odd) {
+        background: linear-gradient(to bottom, #d6bfb2 0%, #844d1a 100%); }
+      section#body #board .bigRow button.checkColors {
+        height: 60%;
+        width: 8em;
+        margin-left: 2em;
+        margin-top: 1em;
+        border-radius: 0.5em; }
+
+@media (min-width: 1024px) {
+  section#body {
+    padding-top: 0.8em; }
+    section#body button#play {
+      transform: translate(64em, -4em); }
+    section#body #boardHeader {
+      width: 20em;
+      margin-bottom: 0.4em; }
+    section#body #board {
+      width: 40em;
+      height: 35.5em; }
+      section#body #board .bigRow .row {
+        width: 20em; }
+      section#body #board .bigRow .points {
+        width: 10em; } }
+

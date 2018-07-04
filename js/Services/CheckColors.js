@@ -7,8 +7,6 @@ class CheckColors {
         let num3SetUp = false;
         let num4SetUp = false;
 
-        console.log(hiddenNumber1, hiddenNumber2, hiddenNumber3, hiddenNumber4);
-        console.log(setNumber1, setNumber2, setNumber3, setNumber4);
 
         if (setNumber1 == hiddenNumber1 ) {
             resultArray[0] = 2;
@@ -30,7 +28,6 @@ class CheckColors {
             num4SetUp = true;
         }
 
-        console.log('etap1, resultArray: ', resultArray);
 
         if ( resultArray[0] == 0 ) {
 
