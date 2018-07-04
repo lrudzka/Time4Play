@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="507d24a5-41c9-4df3-9662-b86d37d882d9" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/components/_body.scss" beforeDir="false" afterPath="$PROJECT_DIR$/css/components/_body.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/components/_footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/css/components/_footer.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/components/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/css/components/_header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/BoardRow.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/js/BoardRow.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/Body.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/js/Body.jsx" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/js/" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -21,32 +17,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="BoardRow.jsx" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/js/BoardRow.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="100" column="25" selection-start-line="100" selection-start-column="25" selection-end-line="100" selection-end-column="25" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="CheckColors.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/Services/CheckColors.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-503">
-              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+              <caret line="29" selection-start-line="29" selection-end-line="29" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Body.jsx" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Body.jsx" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/Body.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="810">
-              <caret line="117" column="26" lean-forward="true" selection-start-line="117" selection-start-column="26" selection-end-line="117" selection-end-column="26" />
+            <state relative-caret-position="225">
+              <caret line="63" column="63" selection-start-line="63" selection-start-column="63" selection-end-line="63" selection-end-column="63" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -67,7 +51,7 @@
         <entry file="file://$PROJECT_DIR$/css/components/_header.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="30">
-              <caret line="2" column="2" lean-forward="true" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="65" />
+              <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="65" />
             </state>
           </provider>
         </entry>
@@ -76,7 +60,7 @@
         <entry file="file://$PROJECT_DIR$/css/components/_footer.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="195">
-              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+              <caret line="13" selection-start-line="13" selection-end-line="13" />
             </state>
           </provider>
         </entry>
@@ -153,8 +137,8 @@
         <option value="$PROJECT_DIR$/css/components/_body.scss" />
         <option value="$PROJECT_DIR$/css/components/_header.scss" />
         <option value="$PROJECT_DIR$/css/components/_footer.scss" />
-        <option value="$PROJECT_DIR$/js/Body.jsx" />
         <option value="$PROJECT_DIR$/js/BoardRow.jsx" />
+        <option value="$PROJECT_DIR$/js/Body.jsx" />
       </list>
     </option>
   </component>
@@ -348,7 +332,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="229072000" />
+    <option name="totallyTimeSpent" value="229167000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="73" y="25" width="1527" height="875" extended-state="6" />
@@ -543,7 +527,7 @@
     <entry file="file://$PROJECT_DIR$/js/Services/CheckColors.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-503">
-          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
         </state>
       </provider>
     </entry>
@@ -564,21 +548,21 @@
     <entry file="file://$PROJECT_DIR$/css/components/_header.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
-          <caret line="2" column="2" lean-forward="true" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="65" />
+          <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="65" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/components/_footer.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/Body.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="810">
-          <caret line="117" column="26" lean-forward="true" selection-start-line="117" selection-start-column="26" selection-end-line="117" selection-end-column="26" />
+        <state relative-caret-position="225">
+          <caret line="63" column="63" selection-start-line="63" selection-start-column="63" selection-end-line="63" selection-end-column="63" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>

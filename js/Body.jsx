@@ -62,7 +62,6 @@ class Body extends React.Component{
                 this.hiddenNumber2 = Number.returnNumber1to6();
                 this.hiddenNumber3 = Number.returnNumber1to6();
                 this.hiddenNumber4 = Number.returnNumber1to6();
-                console.log('hiddenNumber:', this.hiddenNumber1, this.hiddenNumber2, this.hiddenNumber3, this.hiddenNumber4);
             } ,5250)
             setTimeout(()=> {
 
