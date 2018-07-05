@@ -62,6 +62,10 @@ section#body {
     border-radius: 10px;
     transform: translate(31em, -10em);
     background: linear-gradient(to right, lightblue 0%, lightgreen 100%); }
+  section#body .endInfo {
+    transform: translate(11em, 0);
+    font-size: 2em;
+    width: 10em; }
   section#body #boardHeader {
     width: 35em;
     height: 3.2em;
@@ -139,6 +143,8 @@ section#body {
     padding-top: 0.8em; }
     section#body button#play {
       transform: translate(64em, -4em); }
+    section#body .endInfo {
+      transform: translate(28em, -12em); }
     section#body #boardHeader {
       width: 20em;
       margin-bottom: 0.4em; }
