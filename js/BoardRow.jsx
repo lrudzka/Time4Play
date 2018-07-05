@@ -91,28 +91,31 @@ class BoardRow extends React.Component{
             })
 
             let lvlNumber = this.props.id;
+            let finishMessage = "";
 
             if ( newPointsArray[0]==2 && newPointsArray[1]==2 && newPointsArray[2]==2 && newPointsArray[3]==2  ) {
                 if ( lvlNumber == 1 ) {
-                    alert("CONGRATULATIONS!! YOU WON IN 1 STEP, HOW HAVE YOU DONE THAT, MASTER?")
+                   finishMessage = "CONGRATULATIONS!! You won in 1 step, how have you done that, Master?";
                 } else if ( lvlNumber > 1 && lvlNumber <= 4 ) {
-                    alert("CONGRATULATIONS!! YOU WON IN "+ lvlNumber + " STEPS! I'M IMPRESSED!")
+                    finishMessage = "CONGRATULATIONS!! You won in "+ lvlNumber + " steps! I'm impressed!";
                 } else if ( lvlNumber > 4 && lvlNumber <= 6 ) {
-                    alert("CONGRATULATIONS!! YOU WON IN "+ lvlNumber + " STEPS! PRETTY GOOD!")
+                    finishMessage = "CONGRATULATIONS!! You won in "+ lvlNumber + " steps! Pretty good!";
                 } else {
-                    alert("CONGRATULATIONS!! YOU WON IN "+ lvlNumber + " STEPS");
+                    finishMessage = "CONGRATULATIONS!! You won in "+ lvlNumber + " steps.";
                 }
-                window.location.reload()
+
+                lvlNumber = lvlNumber - 0.5;
             }
 
             if ( lvlNumber == 10 ) {
-                alert ("SORRY, NO WIN THIS TIME :-( TRY AGAIN");
-                window.location.reload()
+                finishMessage = "Sorry, no win this time :-( Try again.";
+                lvlNumber = 9.5;
             }
+
 
             if (typeof this.props.actionNextLvl == 'function') {
 
-                this.props.actionNextLvl(lvlNumber)
+                this.props.actionNextLvl(lvlNumber, finishMessage)
             }
         }
     }

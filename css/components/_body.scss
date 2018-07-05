@@ -9,6 +9,11 @@ section#body {
     transform: translate( 31em, -10em);
     background: linear-gradient(to right, lightblue 0%, lightgreen 100%);
   }
+  .endInfo {
+    transform: translate(11em, 0);
+    font-size: 2em;
+    width: 10em;
+  }
   #boardHeader {
     width: 35em;
     height: 3.2em;
@@ -109,6 +114,9 @@ section#body {
     padding-top: 0.8em;
     button#play {
       transform: translate( 64em, -4em);
+    }
+    .endInfo {
+      transform: translate(28em, -12em);
     }
     #boardHeader {
       width: 20em;

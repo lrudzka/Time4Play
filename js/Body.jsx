@@ -13,7 +13,8 @@ class Body extends React.Component{
             number2: 0,
             number3: 0,
             number4: 0,
-            lvlStatus: 0
+            lvlStatus: 0,
+            finishInfo: 'Koniec gry'
         }
     }
 
@@ -69,14 +70,16 @@ class Body extends React.Component{
                     lvlStatus: 1
                 })
             } ,5500)
+        } else {
+            window.location.reload();
         }
     }
 
-    handleNextLvl = (number) => {
+    handleNextLvl = (number, txt) => {
         let newLvl = number+1;
-        console.log('newLvl=', newLvl);
         this.setState({
-            lvlStatus: newLvl
+            lvlStatus: newLvl,
+            finishInfo: txt
         })
     }
 
@@ -97,25 +100,58 @@ class Body extends React.Component{
             backgroundColor: Color.returnColor(this.state.number4)
         };
 
-        let iArray = [0,1,2,3,4,5,6,7,8,9]
+        let styleFinish1 = {
+            backgroundColor: Color.returnColor(this.hiddenNumber1)
+        };
+        let styleFinish2 = {
+            backgroundColor: Color.returnColor(this.hiddenNumber2)
+        };
+        let styleFinish3 = {
+            backgroundColor: Color.returnColor(this.hiddenNumber3)
+        };
+        let styleFinish4 = {
+            backgroundColor: Color.returnColor(this.hiddenNumber4)
+        };
+
+
+        let iArray = [0,1,2,3,4,5,6,7,8,9];
+
+        let finishInfoView;
+        let boardHeaderView;
+
+        if ( this.state.lvlStatus.toFixed(0)!=this.state.lvlStatus  ) {
+            finishInfoView = <div className='endInfo'> {this.state.finishInfo} </div>
+            boardHeaderView = <div id='boardHeader'>
+                                <div style = {styleFinish1} className='ballHeader'></div>
+                                <div style = {styleFinish2} className='ballHeader'></div>
+                                <div style = {styleFinish3} className='ballHeader'></div>
+                                <div style = {styleFinish4} className='ballHeader'></div>
+                            </div>
+        } else if ( this.state.lvlStatus == 0 ) {
+            boardHeaderView = <div id='boardHeader'>
+                                <div style = {style1} className='ballHeader'></div>
+                                <div style = {style2} className='ballHeader'></div>
+                                <div style = {style3} className='ballHeader'></div>
+                                <div style = {style4} className='ballHeader'></div>
+                              </div>
+        } else {
+            boardHeaderView = <div id='boardHeader'>
+                                <div  className='ballHeader'></div>
+                                <div  className='ballHeader'></div>
+                                <div  className='ballHeader'></div>
+                                <div  className='ballHeader'></div>
+                              </div>
+        }
+
 
         return(
            <section id='body'>
                <div className='mainWidth'>
-                   {this.state.lvlStatus==0?
-                   <div id='boardHeader'>
-                       <div style = {style1} className='ballHeader'></div>
-                       <div style = {style2} className='ballHeader'></div>
-                       <div style = {style3} className='ballHeader'></div>
-                       <div style = {style4} className='ballHeader'></div>
-                   </div> :
-                   <div id='boardHeader'>
-                       <div  className='ballHeader'></div>
-                       <div  className='ballHeader'></div>
-                       <div  className='ballHeader'></div>
-                       <div  className='ballHeader'></div>
-                   </div>}
-                   <button onClick={this.handleClick} id='play'> *** PLAY ***</button>
+
+                   {boardHeaderView}
+
+                   <button onClick={this.handleClick} id='play'>{this.state.lvlStatus == 0? '*** PLAY ***' : 'RESTART'}</button>
+
                    <div id='board'>
 
                        {iArray.map( el => <BoardRow  key={el}
@@ -129,6 +165,8 @@ class Body extends React.Component{
                        />  )}
 
                    </div>
+
+                   {finishInfoView}
 
                </div>
 
