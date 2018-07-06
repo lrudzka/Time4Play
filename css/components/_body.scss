@@ -107,6 +107,33 @@ section#body {
       }
     }
   }
+  .legendInfo {
+    width: 20em;
+    border: 1px solid white;
+    border-radius: 1em;
+    padding: 0.5em;
+    font-size: 0.8em;
+    transform: translate(4em, 0);
+    .legendRow {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      .legendPoint {
+        width: 1.4em;
+        height: 1.4em;
+        border-radius: 100%;
+      }
+      .whitePoint {
+        background-color: white;
+      }
+      .blackPoint {
+        background-color: black;
+      }
+    }
+    .legendRow:first-child {
+      margin-bottom: 0.2em;
+    }
+  }
 }
 
 @media (min-width:1024px) {
@@ -133,6 +160,10 @@ section#body {
           width: 10em;
         }
       }
+    }
+    .legendInfo {
+      transform: translate(11em, -52em);
+
     }
   }
 }

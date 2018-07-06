@@ -137,6 +137,27 @@ section#body {
         margin-left: 2em;
         margin-top: 1em;
         border-radius: 0.5em; }
+  section#body .legendInfo {
+    width: 20em;
+    border: 1px solid white;
+    border-radius: 1em;
+    padding: 0.5em;
+    font-size: 0.8em;
+    transform: translate(4em, 0); }
+    section#body .legendInfo .legendRow {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; }
+      section#body .legendInfo .legendRow .legendPoint {
+        width: 1.4em;
+        height: 1.4em;
+        border-radius: 100%; }
+      section#body .legendInfo .legendRow .whitePoint {
+        background-color: white; }
+      section#body .legendInfo .legendRow .blackPoint {
+        background-color: black; }
+    section#body .legendInfo .legendRow:first-child {
+      margin-bottom: 0.2em; }
 
 @media (min-width: 1024px) {
   section#body {
@@ -154,5 +175,7 @@ section#body {
       section#body #board .bigRow .row {
         width: 20em; }
       section#body #board .bigRow .points {
-        width: 10em; } }
+        width: 10em; }
+    section#body .legendInfo {
+      transform: translate(11em, -52em); } }
 

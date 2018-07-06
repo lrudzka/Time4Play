@@ -146,6 +146,7 @@ class Body extends React.Component{
 
         return(
            <section id='body'>
+
                <div className='mainWidth'>
 
                    {boardHeaderView}
@@ -164,6 +165,21 @@ class Body extends React.Component{
                                                      actionNextLvl = {this.handleNextLvl}
                        />  )}
 
+                   </div>
+
+                   <div className="legendInfo">
+                       <div className='legendRow'>
+                           <div className="legendPoint whitePoint"></div>
+                           <div>
+                               <em> one correct color at the incorrect place</em>
+                           </div>
+                       </div>
+                       <div className='legendRow'>
+                           <div className="legendPoint blackPoint"></div>
+                           <div>
+                               <em> one correct color at the correct place</em>
+                           </div>
+                       </div>
                    </div>
 
                    {finishInfoView}
