@@ -25,7 +25,7 @@ Page is fully responsive, there should be no troubles in accessing it on any dev
 ## Installation
 if you want to run/develop the code, you need to recreate the development environment based on package.json file - you need to install the components listed in there (by using npm install in bash console in project folder). To run the site you need to compile jsx files into out.js - it can be done in one of two ways:
 
--use dev-server - use command "npm run start" in bash console, it will start the server locally with preprocessed jsx and sass code.
+- use dev-server - use command "npm run start" in bash console, it will start the server locally with preprocessed jsx and sass code.
 
--build the site - use command "npm run build" in bash console. The entire site will be built in build folder.
+- build the site - use command "npm run build" in bash console. The entire site will be built in build folder.
 
